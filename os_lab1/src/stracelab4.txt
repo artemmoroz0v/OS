@@ -1,0 +1,91 @@
+execve("./main", ["./main"], 0x7ffd2f418c90 /* 62 vars */) = 0
+brk(NULL)                               = 0x55b3669f2000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=77171, ...}) = 0
+mmap(NULL, 77171, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb38e7a6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1594864, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb38e7a4000
+mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb38e209000
+mprotect(0x7fb38e382000, 2097152, PROT_NONE) = 0
+mmap(0x7fb38e582000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x179000) = 0x7fb38e582000
+mmap(0x7fb38e58e000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb38e58e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb38dff1000
+mprotect(0x7fb38e008000, 2093056, PROT_NONE) = 0
+mmap(0x7fb38e207000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fb38e207000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb38dc00000
+mprotect(0x7fb38dde7000, 2097152, PROT_NONE) = 0
+mmap(0x7fb38dfe7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fb38dfe7000
+mmap(0x7fb38dfed000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb38dfed000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb38d862000
+mprotect(0x7fb38d9ff000, 2093056, PROT_NONE) = 0
+mmap(0x7fb38dbfe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7fb38dbfe000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb38e7a2000
+arch_prctl(ARCH_SET_FS, 0x7fb38e7a2d80) = 0
+mprotect(0x7fb38dfe7000, 16384, PROT_READ) = 0
+mprotect(0x7fb38dbfe000, 4096, PROT_READ) = 0
+mprotect(0x7fb38e207000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb38e7a0000
+mprotect(0x7fb38e582000, 40960, PROT_READ) = 0
+mprotect(0x55b3657eb000, 4096, PROT_READ) = 0
+mprotect(0x7fb38e7b9000, 4096, PROT_READ) = 0
+munmap(0x7fb38e7a6000, 77171)           = 0
+brk(NULL)                               = 0x55b3669f2000
+brk(0x55b366a13000)                     = 0x55b366a13000
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+write(1, "Congrats, you are in parent proc"..., 70) = 70
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+read(0, "5\n", 1024)                    = 2
+write(1, "Enter name of file for first chi"..., 37) = 37
+read(0, "ch1.txt\n", 1024)              = 8
+write(1, "For second child: \n", 19)    = 19
+read(0, "ch2.txt\n", 1024)              = 8
+openat(AT_FDCWD, "f1.txt", O_RDWR|O_CREAT, 0777) = 3
+openat(AT_FDCWD, "f2.txt", O_RDWR|O_CREAT, 0777) = 4
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fb38e7b8000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, 4, 0) = 0x7fb38e7b7000
+write(1, "Good. Please enter your strings:"..., 34) = 34
+read(0, "artem\n", 1024)                = 6
+ftruncate(3, 6)                         = 0
+read(0, "amamamamamamamamam\n", 1024)   = 19
+ftruncate(4, 19)                        = 0
+read(0, "maksim\n", 1024)               = 7
+ftruncate(3, 13)                        = 0
+read(0, "ajajhahjajabjaba\n", 1024)     = 17
+ftruncate(4, 36)                        = 0
+read(0, "soiosdiodosidpsisdpisd\n", 1024) = 23
+ftruncate(4, 59)                        = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb38e7a3050) = 2249
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb38e7a3050) = 2250
+munmap(0x7fb38e7b8000, 4096)            = 0
+munmap(0x7fb38e7b7000, 4096)            = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2249, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+close(3)                                = 0
+close(4)                                = 0
+unlink("f1.txt")                        = -1 ETXTBSY (Text file busy)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2250, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+unlink("f2.txt")                        = 0
+lseek(0, -1, SEEK_CUR)                  = -1 ESPIPE (Illegal seek)
+exit_group(0)                           = ?
++++ exited with 0 +++
